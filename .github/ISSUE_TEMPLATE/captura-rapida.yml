@@ -1,0 +1,15 @@
+name: "Captura rápida"
+description: "Una idea, pregunta o posible bug. Se clasifica después."
+labels: ["inbox"]
+projects: ["ia-con-lala/1"]
+body:
+  - type: markdown
+    attributes:
+      value: "Agrega en la barra lateral uno de estos labels: `pregunta-cliente`, `pregunta-interna`, `idea` o `posible-bug`. Si la nota no es de ningún producto, créala en el repo `handbook`."
+  - type: textarea
+    id: nota
+    attributes:
+      label: Nota
+      description: "Escríbelo como te salga. Si sabes a qué historia pertenece, menciónala (#34)."
+    validations:
+      required: true

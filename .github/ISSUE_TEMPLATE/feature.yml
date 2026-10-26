@@ -1,0 +1,21 @@
+name: "Feature"
+description: "Capacidad funcional entregable, parte de una épica"
+type: "Feature"
+projects: ["ia-con-lala/1"]
+body:
+  - type: markdown
+    attributes:
+      value: "Al crearla, enlázala a su épica en la barra lateral (Relationships → Add parent). La relación padre-hijo vive ahí, no en el texto."
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+      description: "¿Qué capacidad tendrá el usuario al terminar?"
+    validations:
+      required: true
+  - type: textarea
+    id: valor
+    attributes:
+      label: Valor para el cliente
+    validations:
+      required: true

@@ -1,0 +1,25 @@
+name: "Spike (investigación)"
+description: "Investigación con tiempo limitado para reducir incertidumbre"
+type: "Spike"
+projects: ["ia-con-lala/1"]
+body:
+  - type: textarea
+    id: pregunta
+    attributes:
+      label: Pregunta que hay que responder
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Tiempo máximo (timebox)
+      placeholder: "Ej.: 4 horas"
+    validations:
+      required: true
+  - type: textarea
+    id: salida
+    attributes:
+      label: Salida esperada
+      description: "Normalmente un ADR en docs/adr/ del repo del producto, una guía en guias/ del handbook, o un comentario con la conclusión"
+    validations:
+      required: true

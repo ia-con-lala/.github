@@ -1,0 +1,22 @@
+name: "Tarea técnica"
+description: "Trabajo técnico concreto, normalmente hija de una historia"
+type: "Task"
+projects: ["ia-con-lala/1"]
+body:
+  - type: markdown
+    attributes:
+      value: "Al crearla, enlázala a su historia en la barra lateral (Relationships → Add parent). La relación padre-hijo vive ahí, no en el texto."
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué hay que hacer
+    validations:
+      required: true
+  - type: textarea
+    id: hecho
+    attributes:
+      label: Está terminada cuando
+      value: |
+        - [ ]
+    validations:
+      required: true
