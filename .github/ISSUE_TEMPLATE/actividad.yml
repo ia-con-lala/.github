@@ -1,0 +1,22 @@
+name: "Actividad"
+description: "Una acción de gestión sin código: llamar, escribir, coordinar, gestionar una cuenta o un pago"
+type: "Actividad"
+projects: ["ia-con-lala/1"]
+body:
+  - type: markdown
+    attributes:
+      value: "Asígnate (o asigna a quien la hace) en la barra lateral: esa persona es la responsable. Si no es de ningún producto, créala en el repo `operacion`. El padre es opcional: si sirve a una épica o historia, enlázala en Relationships → Add parent."
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué hay que hacer
+      description: "La acción y el contexto mínimo para que otra persona pueda hacerla"
+    validations:
+      required: true
+  - type: textarea
+    id: hecho
+    attributes:
+      label: Está terminada cuando
+      description: "El resultado concreto. Ej.: Ana confirmó la fecha y quedó en el calendario"
+    validations:
+      required: true
